@@ -20,11 +20,10 @@ public class FajnaKlasa {
 ===================================
 <br/>
 {% assign post = site.posts.first %}
-<a href="{{ post.url }}">
+<a href="{{ post.url }}"></a>
 <h3>{{ post.title }}</h3>
 <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
 <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
-</a>
 <br/>
 Lista postów:
 <ul>
