@@ -40,14 +40,14 @@
 							<li><div class="twitter-follow"><a href="https://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
 						</ul>
 					</div>
-					Pozostale posty:
+					Lista postów:
 					<ul>
 					  {% for post in site.posts %}
 						<li>
 						  <a href="{{ post.url }}">{{ post.title }}</a>
 						  {{ post.excerpt }}
 						</li>
-					  {% endfor %}
+					{% endfor %}
 					</ul>
 					<div class="comment">
 					{% include JB/comments %}

@@ -17,6 +17,7 @@ public class FajnaKlasa {
 	}
 }
 {% endhighlight %}
+===================================
 <br/>
 {% assign post = site.posts.first %}
 <a href="{{ post.url }}">
@@ -25,12 +26,12 @@ public class FajnaKlasa {
 <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
 </a>
 <br/>
-Pozostale posty:
+Lista postów:
 <ul>
-  {% for post in site.posts %}
-	<li>
-	  <a href="{{ post.url }}">{{ post.title }}</a>
-	  {{ post.excerpt }}
-	</li>
-  {% endfor %}
+{% for post in site.posts %}
+<li>
+  <a href="{{ post.url }}">{{ post.title }}</a>
+  {{ post.excerpt }}
+</li>
+{% endfor %}
 </ul>
