@@ -12,15 +12,17 @@ Fajny kod:
 
 
 {% highlight java %}
-	public class FajnaKlasa {
-		public static main(String[] args) {
-			System.out.println("Witaj na mojej stronie!");
-		}
+public class FajnaKlasa {
+	public static main(String[] args) {
+		System.out.println("Witaj na mojej stronie!");
 	}
+}
 {% endhighlight %}
 
-	
-Aktualne posty:
+<h1>Najnowszy post:</h1>
+{% assign post = site.posts.first %}
+
+Pozostale posty:
 <ul>
   {% for post in site.posts %}
     <li>
