@@ -22,7 +22,7 @@ public class MyUberUtils {
 <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
 <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
 <br/>
-Lista postów:
+My posts:
 <ul>
 {% for post in site.posts %}
 <li>
