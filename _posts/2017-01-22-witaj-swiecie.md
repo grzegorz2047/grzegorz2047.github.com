@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: "Witaj �wiecie!"
+title: "Witaj świecie!"
 description: ""
 category: 
 tags: []
