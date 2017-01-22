@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nowa strona"
+title: "Witaj ˜wiecie!"
 description: ""
 category: 
 tags: []
