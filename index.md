@@ -10,6 +10,16 @@ Fajny kod:
 
 	System.out.println("elo");
 
+
+{% highlight java %}
+	public class FajnaKlasa {
+		public static main(String[] args) {
+			System.out.println("Witaj na mojej stronie!");
+		}
+	}
+{% endhighlight %}
+
+	
 Aktualne posty:
 <ul>
   {% for post in site.posts %}
