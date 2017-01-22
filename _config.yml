@@ -8,14 +8,14 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Prosta strona
+title : Strona o moich doświadczeniach w programowaniu
 tagline: grzegorz2047
 author :
   name : Grzegorz
   email : grzegorz2047@gmail.com
   github : grzegorz2047
-  twitter : username
-  feedburner : feedname
+  twitter : grzegorz2047
+  feedburner : grzegorz2047
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
