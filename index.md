@@ -1,23 +1,20 @@
 ---
 layout: page
-title: Witaj!
-tagline: grzegorz2047 programowanie java
+title: Hi!
+tagline: grzegorz2047 programowanie java programming language
 ---
 {% include JB/setup %}
-{% include JB/posts_collate %}
 
-Fajny kod:
-
-	System.out.println("elo");
-
+This is my blog where I will possibly post something related to my programming experience.
+This is my highlighting template to wrap some fancy code ;)
 {% highlight java %}
-public class FajnaKlasa {
-	public static main(String[] args) {
-		System.out.println("Witaj na mojej stronie!");
+public class MyUberUtils {
+	public static coolMethod(String fancyChainOfChars) {
+		return fancyChainOfChars.split(" ");
 	}
 }
 {% endhighlight %}
-===================================
+
 <br/>
 {% assign post = site.posts.first %}
 <a href="{{ post.url }}"></a>
