@@ -10,7 +10,9 @@ tagline: grzegorz2047 programowanie java programming language
 <a href="{{ post.url }}"></a>
 <h3>{{ post.title }}</h3>
 <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
-<div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
+<div>
+	{{ post.content |truncatehtml | truncatewords: 60 }}
+</div>
 <br/>
 My posts:
 <ul>
