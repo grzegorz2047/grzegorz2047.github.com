@@ -49,12 +49,12 @@ public class Product {
 		this.price = price;
 	}
 	
-	public BigDecimal computeDiscount(String discountName) {
+	public String computeDiscount(String discountName) {
 		if(discountName == "student") {
-			return (price * 20)/100;
+			return String.valueOf(price + (price * 20)/100);
 		}
 		if(discountName == "newclient") {
-			return (price * 10)/100;
+			return price + String.valueOf((price * 10)/100);
 		}
 	}
 }
