@@ -5,16 +5,6 @@ tagline: grzegorz2047 programowanie java programming language
 ---
 {% include JB/setup %}
 
-This is my blog where I will possibly post something related to my programming experience.
-This is my highlighting template to wrap some fancy code ;)
-{% highlight java %}
-public class MyUberUtils {
-	public static coolMethod(String fancyChainOfChars) {
-		return fancyChainOfChars.split(" ");
-	}
-}
-{% endhighlight %}
-
 <br/>
 {% assign post = site.posts.first %}
 <a href="{{ post.url }}"></a>

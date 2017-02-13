@@ -6,18 +6,20 @@ category: java patterns
 tags: []
 ---
 {% include JB/setup %}
-Hi, some time ago I started learning about java design patterns because as a java developer
-I should have some knowledge about how to create good java application.
-In java, people use different patterns to help create good code. For example we have 
-GRASP patterns, SOLID patterns and much more.
-In this post I'm going to describe strategy pattern. The reason is simple. Firstly, I'd like to
-memorize it, secondly, in case when I forget it I'd like to go back and look at it.
-Also maybe someone will learn something new if someone have never heared about design patterns.
-So, when do we use strategy pattern?
-We use it when we have to implement different algorithms which are used interchangeably.
-So for example, when we have different types of discounts, how should we implement it?
-Let's say, that we have a shop and we want to give 20% discount for our products to all students.
-We can create class Product:
+
+<br/>
+Hi, some time ago I started learning about java design patterns because as a java developer<br/>
+I should have some knowledge about how to create good java application.<br/>
+In java, people use different patterns to help create good code. For example we have <br/>
+GRASP patterns, SOLID patterns and much more.<br/>
+In this post I'm going to describe strategy pattern. The reason is simple. <br/>
+Firstly, I'd like to memorize it, secondly, in case when I forget it I'd like to go back and look at it.<br/>
+Also maybe someone will learn something new if someone have never heared about design patterns.<br/>
+So, when do we use strategy pattern?<br/>
+We use it when we have to implement different algorithms which are used interchangeably.<br/>
+So for example, when we have different types of discounts, how should we implement it?<br/>
+Let's say, that we have a shop and we want to give 20% discount for our products to all students.<br/>
+We can create class Product:<br/>
 
 {% highlight java %}
 public class Product {
@@ -31,9 +33,10 @@ public class Product {
 	}
 }
 {% endhighlight %} 
-Let's stop for a second and think, how beginner java programmer would implement it?
-He would probably think, that Product can compute discount for himself.
-It would look like something like that:
+
+Let's stop for a second and think, how beginner java programmer would implement it?<br/>
+He would probably think, that Product can compute discount for himself.<br/>
+It would look like something like that:<br/>
 
 {% highlight java %}
 public class Product {
@@ -57,13 +60,13 @@ public class Product {
 }
 {% endhighlight %} 
 
-What if we want to implement discounts for 10 or even more types of people?
-Then, in this case, we add more if's!
-Well, that would work, but it's not really good idea.
-So in this case, we can use Strategy pattern.
-So basically we will provide for our Product Discount interface, so when we will be computing
-discount, we simply give specific algorithm, which gives us appropriate discount.
-To do this, let's create an interface called Discount:
+What if we want to implement discounts for 10 or even more types of people?<br/>
+Then, in this case, we add more if's!<br/>
+Well, that would work, but it's not really good idea.<br/>
+So in this case, we can use Strategy pattern.<br/>
+So basically we will provide for our Product Discount interface, so when we will be computing<br/>
+discount, we simply give specific algorithm, which gives us appropriate discount.<br/>
+To do this, let's create an interface called Discount:<br/>
 
 {% highlight java %}
 public interface Discount {
@@ -73,7 +76,7 @@ public interface Discount {
 }
 {% endhighlight %} 
  
-Now, let's implement it to for our student discount:
+Now, let's implement it to for our student discount:<br/>
 
 {% highlight java %}
 public class StudentDiscount implements Discount {
@@ -84,7 +87,8 @@ public class StudentDiscount implements Discount {
 	}
 }
 {% endhighlight %} 
-and for new client discount:
+
+and for new client discount:<br/>
 
 {% highlight java %}
 public class NewClientDiscount implements Discount {
@@ -96,7 +100,7 @@ public class NewClientDiscount implements Discount {
 }
 {% endhighlight %} 
 
-Let's apply it to our Product class:
+Let's apply it to our Product class:<br/>
 
 {% highlight java %}
 public class Product {
@@ -120,8 +124,8 @@ public class Product {
 }
 {% endhighlight %} 
 
-What about case when there is no discount?
-Simply add discount, where we return full price:
+What about case when there is no discount?<br/>
+Simply add discount, where we return full price:<br/>
 
 {% highlight java %}
 public class NoDiscount implements Discount {
@@ -132,7 +136,7 @@ public class NoDiscount implements Discount {
 }
 {% endhighlight %} 
 
-So finally, our Product class should look like that:
+So finally, our Product class should look like that:<br/>
 
 {% highlight java %}
 public class Product {
@@ -157,9 +161,9 @@ public class Product {
 }
 {% endhighlight %} 
 
-Now we can use our classes in practice. 
-Now we can create class called Order, where we'll store all Products and summarise price
-and also we can create our Main class to make it work.
+Now we can use our classes in practice. <br/>
+Now we can create class called Order, where we'll store all Products and summarise price<br/>
+and also we can create our Main class to make it work.<br/>
 
 {% highlight java %}
 public class Order {
@@ -182,7 +186,7 @@ public class Order {
 }
 {% endhighlight %} 
 
-And in Main class we can do this:
+And in Main class we can do this:<br/>
 
 {% highlight java %}
 public class Main {
@@ -206,14 +210,14 @@ public class Main {
 }
 {% endhighlight %} 
 
-So that's how you can implement strategy pattern. It's quite easy to implement it.
-Let's see on good sides and bad sides of this pattern.
-So good thing is that you can create class which doesn't have to be touched every time
-when you want to implement new algorithm to compute your discount. And you don't have write
-those if's statements.
+So that's how you can implement strategy pattern. It's quite easy to implement it.<br/>
+Let's see on good sides and bad sides of this pattern.<br/>
+So good thing is that you can create class which doesn't have to be touched every time<br/>
+when you want to implement new algorithm to compute your discount. And you don't have write<br/>
+those if's statements.<br/>
 
-From the other side, you have to know what algorithm you want to implement and you have to
-create new class for each discount algorithm.
+From the other side, you have to know what algorithm you want to implement and you have to<br/>
+create new class for each discount algorithm.<br/>
 
-Ok, and that's it what you have to know to use stategy pattern in your project.
-Have fun!
+Ok, and that's it what you have to know to use stategy pattern in your project.<br/>
+Have fun!<br/>
