@@ -10,10 +10,19 @@ tagline: grzegorz2047 programowanie java programming language
 <a href="{{ post.url }}"></a>
 <h3>{{ post.title }}</h3>
 <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
-<div>
-	{{ post.content |truncatehtml | truncatewords: 60 }}
-</div>
+<h1 class="entry-title">
+    <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
+</h1>
+{% if post.title %}
+  <h1 class="entry-title">
+    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+  </h1>      
+{% endif %}
+<div class="entry-content">{{ content }}</div>
 <br/>
+
+
+
 My posts:
 <ul>
 {% for post in site.posts %}
