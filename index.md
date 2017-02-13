@@ -19,7 +19,7 @@ tagline: grzegorz2047 programowanie java programming language
 
 
 
-My posts:
+My other posts:
 <ul>
 {% for post in site.posts %}
 <li>

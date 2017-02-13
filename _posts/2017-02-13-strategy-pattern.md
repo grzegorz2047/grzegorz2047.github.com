@@ -8,13 +8,13 @@ tags: []
 {% include JB/setup %}
 
 <br/>
-Hi, some time ago I started learning about java design patterns because as a java developer<br/>
+Hi, some time ago I started learning about java design patterns because as a java developer
 I should have some knowledge about how to create good java application.<br/>
-In java, people use different patterns to help create good code. For example we have <br/>
-GRASP patterns, SOLID patterns and much more.<br/>
+In java, people use different patterns to help create good code.<br/>
+For example we have GRASP patterns, SOLID patterns and much more.<br/>
 In this post I'm going to describe strategy pattern. The reason is simple. <br/>
 Firstly, I'd like to memorize it, secondly, in case when I forget it I'd like to go back and look at it.<br/>
-Also maybe someone will learn something new if someone have never heared about design patterns.<br/>
+Also maybe someone will learn something new if someone have never heard about design patterns.<br/>
 So, when do we use strategy pattern?<br/>
 We use it when we have to implement different algorithms which are used interchangeably.<br/>
 So for example, when we have different types of discounts, how should we implement it?<br/>
