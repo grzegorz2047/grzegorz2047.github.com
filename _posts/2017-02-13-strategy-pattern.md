@@ -213,11 +213,10 @@ public class Main {
 So that's how you can implement strategy pattern. It's quite easy to implement it.<br/>
 Let's see on good sides and bad sides of this pattern.<br/>
 So good thing is that you can create class which doesn't have to be touched every time<br/>
-when you want to implement new algorithm to compute your discount. And you don't have write<br/>
+when you want to implement new algorithm to compute your discount. And you don't have write 
 those if's statements.<br/>
 
 From the other side, you have to know what algorithm you want to implement and you have to<br/>
 create new class for each discount algorithm.<br/>
-
-Ok, and that's it what you have to know to use stategy pattern in your project.<br/>
+Ok, and that's all you have to know to use stategy pattern in your project.<br/>
 Have fun!<br/>
