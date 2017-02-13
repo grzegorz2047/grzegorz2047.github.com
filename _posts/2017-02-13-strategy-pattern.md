@@ -18,6 +18,7 @@ We use it when we have to implement different algorithms which are used intercha
 So for example, when we have different types of discounts, how should we implement it?
 Let's say, that we have a shop and we want to give 20% discount for our products to all students.
 We can create class Product:
+
 {% highlight java %}
 public class Product {
 	
